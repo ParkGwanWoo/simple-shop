@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Flex로 구현해보았습니다 :D */
+  
+  body {
+    margin: 0;
+    min-width: 920px;
+    font-family: "Helvetica";
+  }
+  
+  /* header css */
+  .header {
+      padding-left: 30px;
+      padding-right: 30px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+  }
+  
+  .header .header__logo {
+      height: 20px;
+  }
+  
+  .header__side-bar {
+      padding-left: 0px;
+      
+  }
+  .header__side-bar li {
+      display: inline;
+      margin-right: 30px;
+      align-self: flex-end;
+  }
+  .header__side-bar li:last-child {
+      margin-right: 0px;
+  }
+  
+  .header__side-bar li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 13px;
+      font-family: 'Helvetica';
+  }
+  
+  .intro {
+      margin-top: 60px;
+      margin-bottom: 60px;
+      text-align: center;
+      font-size: 24px;
+      color: #545454;
+      font-weight: bold;
+      font-family: 'Helvetica';
+  }
+  
+  .products {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 979px;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content:  center;
+      
+  }
+  
+  .products__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 80px;
+  }
+  
+  .products__item img {
+      width: 225px;
+      height: 225px;
+      
+  }
+  
+  .products__item img:not(:last-child) {
+      margin-right: 20px;
+  }
+  
+  .products__item p {
+      font-size: 16px;
+      
+  }
+  
+  .item_name {
+      margin-top: 20px;
+      margin-bottom: 4px;
+  
+  }
+  
+  .item_price {
+      margin: 0;
+  }
+  
+  .footer {
+      margin-top: 120px;
+      margin-bottom: 80px;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .footer__link {
+      text-decoration: none;
+  }
+  
+  .footer__link img {
+      height: 25px;
+  }
+  
+  .footer__link:not(:last-child) {
+      margin-right: 20px;
+  }
+  
+  /* Test Code
+  
+  .header {
+      border: 1px solid black;
+  }
+  
+  section {
+      border: 1px solid yellow;
+  }
+  
+  .intro {
+      border: 1px solid red;
+  }
+  
+  .products {
+      border: 1px solid green;
+  }
+  
+  .footer {
+       border: 1px solid purple;   
+  }
+  
+  */
