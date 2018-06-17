@@ -1,2 +1,2 @@
 # simple-shop
-simple shop with HTML &amp; CSS
+HTML, CSS를 사용하여 만든 간단한 쇼핑몰 
